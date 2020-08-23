@@ -1,0 +1,333 @@
+/* Global */
+
+$color-main: gold;
+$font-text: 'Lora', serif;
+$font-header: 'Poppins', sans-serif;
+$font-logo: 'Rouge Script', cursive;
+
+/* General */
+
+html
+{
+	font-family: $font-text;
+}
+
+h1, h2, h3, h4
+{
+	font-family: $font-header;
+}
+
+h6
+{
+	margin: 0;
+	font-style: $font-text;
+	font-style: italic;
+	line-height: 1.2;
+}
+
+body
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.section-title
+{
+	flex: 0 0 100%;
+	margin: 36px 0;
+	text-align: center;
+}
+
+.section-title h3
+{
+	font-size: 30px;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* Banner */
+
+header
+{
+	position: relative;
+	background: black;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+}
+
+header::before
+{
+	content: "";
+	background-image: url("/images/madebyvadim.com-tiny.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.page-title
+{
+	color: white;
+	flex: 0 0 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+  	align-items: center;
+  	position: relative;
+}
+
+.page-title p
+{
+	font-style: italic;
+	font-size: 32px;
+	margin: 0 0 12px 0;
+}
+
+.page-title h1
+{
+	font-size: 60px;
+	margin: 0;
+}
+
+.page-title .btn
+{
+	border-radius: 5px;
+	background: $color-main;
+	font-family: $font-header;
+	color: white;
+	border: none;
+	height: 60px;
+	width: 180px;
+	margin-top: 24px;
+	margin-bottom: 120px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.page-title .btn a
+{
+	text-decoration: none;
+	color: white;
+	line-height: 60px;
+}
+
+/* Navigation */
+
+.navigation
+{
+	position: relative;
+	flex: 0 0 15%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.navigation .logo
+{
+	flex: 0 0 30%;
+	text-align: right;
+	align-self: center;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.navigation .logo h4
+{
+	font-family: $font-logo;
+	color: $color-main;
+	font-size: 24px;
+	padding-right: 24px;
+}
+
+.navigation nav
+{
+	flex: 0 0 70%;
+	align-self: center;
+	text-align: center;
+}
+
+.navigation li
+{
+	list-style-type: none;
+	font-family: $font-header;
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.navigation li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+/* Services */
+
+.services
+{
+	flex-wrap: wrap;
+	margin-top: 42px;
+}
+
+.services .elements
+{
+	display: flex;
+	justify-content: center;
+	margin: 24px 0;
+}
+
+.services .element
+{
+	border: 0px solid black;
+	text-align: center;
+}
+
+.services .element i
+{
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	border: 3px solid $color-main;
+	border-radius: 50%;
+}
+
+.services .element .fas
+{
+	color: $color-main;
+	font-size: 36px;
+}
+
+.services .element h4
+{
+	margin-bottom: 0;
+}
+
+/* Portfolio */
+
+.portfolio
+{
+	flex-wrap: wrap;
+	margin-top: 42px;
+	justify-content: center;
+	background-color: whitesmoke;
+	margin-bottom: 0;
+}
+
+.portfolio .section-title
+{
+	margin-bottom: 12px;
+	margin-top: 48px;
+}
+
+.portfolio .elements
+{
+	flex: 0 0 75%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 90px;
+}
+
+.portfolio .element
+{
+	border: 0px solid black;
+	padding: 0;
+}
+
+.portfolio .element .card-image
+{
+	border: 0px solid black;
+	width: 255px;
+	height: 255px;
+	margin: 50px 15px 0 15px;
+}
+
+.portfolio .element .img-1{background-image: url("/images/Ebony-Ivory-Branding-Mockup.jpg");}
+.portfolio .element .img-2{background-image: url("/images/Branding-Identity-Mockup-600x450.jpg");}
+.portfolio .element .img-3{background-image: url("/images/2020-08-18_00h27_47.png");}
+.portfolio .element .img-4{background-image: url("/images/Vinyl-Record-PSD-Main.jpg");}
+.portfolio .element .img-5{background-image: url("/images/Treehouse-Home-Page-Main.jpg");}
+.portfolio .element .img-6{background-image: url("/images/3-Photorealistic-Logo-Mockups-Main.jpg");}
+
+.portfolio .element .image
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+}
+
+.portfolio .element .card-title
+{
+	background-color: white;
+	border: 0px solid black;
+	text-align: center;
+	padding: 18px 6px;
+	margin: 0 15px;
+}
+
+.portfolio .element .card-title h4
+{
+	margin: 0;
+}
+
+/* Footer */
+
+footer
+{
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+footer .element
+{
+	text-align: left;
+	padding-left: 0;
+}
+
+footer .smedia
+{
+	justify-content: center;
+	text-align: center;
+}
+
+footer ul
+{
+	display: inline-flex;
+	padding: 0;
+}
+
+footer li
+{
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0 6px;
+}
+
+.fab
+{
+	font-size: 25px;
+  	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	color: white;
+	background: black;
+	text-align: center;
+}
+
+footer a
+{
+	font-size: 0;
+}
