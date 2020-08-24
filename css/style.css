@@ -10,6 +10,7 @@ h1, h2, h3, h4 {
 
 h6 {
   margin: 0;
+  font-size: 13px;
   font-style: "Lora", serif;
   font-style: italic;
   line-height: 1.2;
@@ -42,7 +43,14 @@ header {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
   height: 700px;
+}
+
+header .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 header::before {
@@ -164,12 +172,18 @@ header::before {
 .services {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-top: 42px;
 }
 
 .services .elements {
+  -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
   margin: 24px 0;
@@ -178,12 +192,13 @@ header::before {
 .services .element {
   border: 0px solid black;
   text-align: center;
+  width: 285px;
 }
 
 .services .element i {
   height: 80px;
   width: 80px;
-  line-height: 80px;
+  line-height: 75px;
   border: 3px solid gold;
   border-radius: 50%;
 }
@@ -325,5 +340,31 @@ footer li {
 
 footer a {
   font-size: 0;
+}
+
+/* Media */
+@media (max-width: 575px) {
+  .navigation nav {
+    text-align: left;
+  }
+  .navigation nav ul {
+    padding-left: 0;
+    margin-right: 60px;
+  }
+  .page-title h1 {
+    font-size: 36px;
+  }
+  .page-title p {
+    font-size: 20px;
+  }
+  footer {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  footer .element {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
