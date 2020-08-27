@@ -177,6 +177,13 @@ header::before {
   margin-top: 42px;
 }
 
+.services .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .services .elements {
   -ms-flex: 0 0 75%;
       flex: 0 0 75%;
@@ -221,6 +228,11 @@ header::before {
       justify-content: center;
   background-color: whitesmoke;
   margin-bottom: 0;
+}
+
+.portfolio .row {
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .portfolio .section-title {
